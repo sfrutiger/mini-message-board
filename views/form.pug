@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  header
+    h1= title
+  main
+    form(method='POST' action='/new')
+        input(type='text' name='text' id='text')
+        input(type='text' placeholder='username' name='user' id='user')
+        button(type='submit' id='submit-button')= 'post'
